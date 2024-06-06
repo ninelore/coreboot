@@ -8,6 +8,7 @@ pkgs.mkShell {
 		gdb
 		git
 		qemu
+		python3
 	];
 
 	buildInputs = [
@@ -19,6 +20,8 @@ pkgs.mkShell {
 		coreboot-toolchain.i386
 		pkg-config
 		openssh
+		bison flex # U-Boot
+		libuuid imagemagick gnat # EDK2
 	];
 
 	shellHook = ''
