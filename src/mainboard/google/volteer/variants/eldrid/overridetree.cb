@@ -64,9 +64,6 @@ chip soc/intel/tigerlake
 			# DPTF Policy for Eldrid board
 			chip drivers/intel/dptf
 
-				## Disable Active Policy from baseboard
-				register "policies.active" = "{[0] = {.target=DPTF_NONE}}"
-
 				## Passive Policy
 				register "policies.passive" = "{
 					[0] = DPTF_PASSIVE(CPU,CPU,87,5000),
