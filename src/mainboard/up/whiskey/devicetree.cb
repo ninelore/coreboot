@@ -1,0 +1,29 @@
+chip soc/intel/cannonlake
+
+	device domain 0 on
+		subsystemid 0x8086 0x7270 inherit
+		device ref system_agent on end
+		device ref igpu on end
+		device ref dptf on end
+		device ref gna on end
+		device ref thermal on end
+		device ref gspi2 on end
+		device ref xhci on end
+		device ref shared_sram on end
+		device ref i2c0 on end
+		device ref i2c3 on end
+		device ref heci1 on end
+		device ref sata on end
+		device ref i2c4 on end
+		device ref uart2 on end
+		device ref emmc on end
+		device ref pcie_rp15 on end
+		device ref uart0 on end
+		device ref uart1 on end
+		device ref lpc_espi on end
+		device ref hda on end
+		device ref smbus on end
+		device ref gbe on end
+
+	end
+end

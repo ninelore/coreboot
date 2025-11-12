@@ -1,0 +1,29 @@
+## SPDX-License-Identifier: GPL-2.0-only
+
+if BOARD_UP_WHISKEY
+
+config BOARD_SPECIFIC_OPTIONS
+	def_bool y
+	select HAVE_ACPI_TABLES
+	select HAVE_ACPI_RESUME
+	select INTEL_GMA_HAVE_VBT
+#	select INTEL_LPSS_UART_FOR_CONSOLE
+	select SOC_INTEL_WHISKEYLAKE
+	select BOARD_ROMSIZE_KB_32768
+#	select MAINBOARD_HAS_LIBGFXINIT
+#	select CRB_TPM
+#	select HAVE_INTEL_PTT
+#	select NO_UART_ON_SUPERIO
+
+config MAINBOARD_DIR
+	default "up/whiskey"
+
+config UART_FOR_CONSOLE
+	int
+	default 0
+
+config CONSOLE_POST
+	bool
+	default y
+
+endif
