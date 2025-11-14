@@ -1,0 +1,7 @@
+Vendor name: Up
+Board name: Tigerlake
+Category: mini
+ROM protocol: SPI
+ROM socketed: n
+Flashrom support: y
+Release year: 2021

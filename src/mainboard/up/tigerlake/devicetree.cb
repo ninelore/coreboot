@@ -1,0 +1,6 @@
+chip soc/intel/tigerlake
+	device domain 0 on
+		#subsystemid 0x8086 0x7270 inherit
+	end
+end
+
